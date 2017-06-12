@@ -18,7 +18,6 @@
     </form>
     <button id="clickit">SEND!</button>
     <div id="answer">
-        <p id="echoBack"></p>
         <p id="chimeNumber"></p>
     </div>
 </body>
@@ -28,7 +27,6 @@
         $("#clickit").click(function(){
             var startTime = $('#startTime').val();
             var endTime = $('#endTime').val();
-            $("#answer #echoBack").text("start time is "+startTime+" end time is "+endTime);
             $("#answer #chimeNumber").text(countBells(startTime,endTime));
         });
 
